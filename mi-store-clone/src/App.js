@@ -1,7 +1,12 @@
 import "./App.css";
+import PreNavbar from "./components/PreNavbar";
 
 function App() {
-  return <div>Hello World IMG PRICE</div>;
+  return (
+    <div>
+      <PreNavbar />
+    </div>
+  );
 }
 
 export default App;

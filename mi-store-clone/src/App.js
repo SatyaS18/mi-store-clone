@@ -78,6 +78,7 @@ function App() {
       </Routes>
       <Heading text="Product Reviews" />
       <ProductReviews productReviews={Data.productReviews} />
+      <Heading text="Videos" />
     </Router>
   );
 }

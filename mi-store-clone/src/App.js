@@ -17,6 +17,7 @@ function App() {
       <Offers offers={Data.offer} />
       <Heading text="Star Products" />
       <StarProduct starProduct={Data.starProduct} />
+      <Heading text="Hot Accessories" />
     </Router>
   );
 }

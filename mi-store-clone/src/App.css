@@ -2,3 +2,7 @@ body {
   margin: 0;
   background-color: gray;
 }
+
+.carousel-indicators > button {
+  display: none !important;
+}

@@ -31,7 +31,49 @@ function App() {
               musicCover={Data.hotAccessoriesCover.music}
             />
           }
-        ></Route>
+        />
+        <Route
+          exact
+          path="/smartDevice"
+          element={
+            <HotAccessories
+              smartDevice={Data.hotAccessories.smartDevice}
+              smartDeviceCover={Data.hotAccessoriesCover.smartDevice}
+            />
+          }
+        />
+        <Route
+          exact
+          path="/home"
+          element={
+            <HotAccessories
+              home={Data.hotAccessories.home}
+              homeCover={Data.hotAccessoriesCover.home}
+            />
+          }
+        />
+        <Route
+          exact
+          path="/lifestyle"
+          element={
+            <HotAccessories
+              lifeStyle={Data.hotAccessories.lifeStyle}
+              lifeStyleCover={Data.hotAccessoriesCover.lifeStyle}
+            />
+          }
+        />
+        <Route
+          exact
+          path="/mobileAccessories"
+          element={
+            <HotAccessories
+              mobileAccessories={Data.hotAccessories.mobileAccessories}
+              mobileAccessoriesCover={
+                Data.hotAccessoriesCover.mobileAccessories
+              }
+            />
+          }
+        />
       </Routes>
     </Router>
   );

@@ -13,12 +13,25 @@ import ProductReviews from "./components/ProductReviews.js";
 import Videos from "./components/Videos.js";
 import Banner from "./components/Banner.js";
 import Footer from "./components/Footer.js";
+import NavOptions from "./components/NavOptions.js";
 
 function App() {
   return (
     <Router>
       <PreNavbar />
       <Navbar />
+
+      <NavOptions
+        miPhones={Data.miPhones}
+        redmiPhones={Data.redmiPhones}
+        tv={Data.tv}
+        laptop={Data.laptop}
+        fitnessAndLifeStyle={Data.fitnessAndLifeStyle}
+        home={Data.home}
+        audio={Data.audio}
+        accessories={Data.accessories}
+      />
+
       <Slider start={Data.banner.start} />
       <Offers offers={Data.offer} />
       <Heading text="Star Products" />
